@@ -13,7 +13,7 @@ Zend_Loader::loadClass('Zend_Controller_Front');
 
 // set up controller
 $frontController = Zend_Controller_Front::getInstance();
-$frontController->setControllerDirectory('../application/controllers/');
+$frontController->setControllerDirectory('../application/controllers');
 
 // run
 $frontController->dispatch();
