@@ -1,7 +1,11 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: sam
- * Date: 04/11/15
- * Time: 20:58
- */
+
+class IndexController extends Zend_Controller_Action
+{
+    public function indexAction()
+    {
+        $this->view->assign('title', 'Hello World');
+    }
+}
+
+?>
