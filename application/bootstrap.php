@@ -16,8 +16,8 @@ class Bootstrap
         Zend_Loader::registerAutoload();
 
         // Load configuration
-        Zend_Registry::set('configSection'. $configSection);
-        $config = new Zend_Config_ini(ROOT_DIR . '/application/config.ini', $configSection);
+        Zend_Registry::set('configSection', $configSection);
+        $config = new Zend_Config_Ini(ROOT_DIR . '/application/config.ini', $configSection);
         Zend_Registry::set('config', $config);
 
         date_default_timezone_set(
