@@ -14,5 +14,5 @@ CREATE TABLE item (
   id            INT                     AUTO_INCREMENT PRIMARY KEY,
   asin          VARCHAR(10) NOT NULL,
   price         NUMERIC(15,2) NOT NULL,
-  last_checked  TIMESTAMP NOT NULL
+  last_checked  TIMESTAMP DEFAULT NOW() NOT NULL
 );

@@ -1,6 +1,6 @@
 use apw;
 
-INSERT INTO item (asin, price, last_checked)
+INSERT INTO item (asin, price)
 VALUES
-  ('B000EOQ3LM', 9.69, now()),
-  ('B002EVOA4A', 3.04, now());
+  ('B000EOQ3LM', 9.69),
+  ('B002EVOA4A', 3.04);
