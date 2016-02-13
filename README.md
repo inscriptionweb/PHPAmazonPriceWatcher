@@ -1,5 +1,5 @@
 # PHPAmazonPriceWatcher
-A small utility to examine prices from Amazon pages and let you know if the price has dropped.
+A small web application to examine prices from Amazon pages and let you know if the price has dropped.
 
 ## Technologies
 * [PHP](https://secure.php.net/)
