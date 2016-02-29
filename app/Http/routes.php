@@ -23,10 +23,6 @@
 */
 
 Route::group(['middleware' => ['web']], function () {
-    Route::get('/', function () {
-        return view('index');
-    });
-    Route::post('/', function () {
-        return view('index');
-    });
+    Route::get('/', 'PagesController@index');
+    Route::post('/', 'PagesController@store');
 });
