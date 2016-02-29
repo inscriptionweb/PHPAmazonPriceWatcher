@@ -1,11 +1,19 @@
 @extends('layout')
 
 @section('header')
-    <title>Amazon Price Watcher</title>
+    <title xmlns="http://www.w3.org/1999/html">Amazon Price Watcher</title>
 @stop
 @section('content')
 <h1>Amazon Price Watcher</h1>
-<button class="btn btn-default btn-success btn-lg" type="submit">Check Prices</button>
+<form method="POST" action="/">
+    {{ csrf_field() }}
+    <div class="form group">
+        <input type="text" name="asin" class="form-control">{{ old('asin') }}</input>
+    </div>
+    </br>
+    <button class="btn btn-default btn-success btn-lg" type="submit">Add Item</button>
+</form>
+
 @stop
 
 @section('footer')
